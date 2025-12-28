@@ -1,11 +1,34 @@
 import { useMemo } from "react";
 import Button from "../components/Button";
-import { ArrowRight, Download, Github, Instagram, Send } from "lucide-react";
+import {
+  ArrowRight,
+  ChevronDown,
+  Download,
+  Github,
+  Instagram,
+  Send,
+} from "lucide-react";
+
+const skills = [
+  "React",
+  "Next.js",
+  "JavaScript",
+  "TypeScript",
+  "PostgreSQL",
+  "Vercel",
+  "Tailwind CSS",
+  "Prisma",
+  "Supabase",
+  "Scss",
+  "Git",
+  "GitHub",
+];
+
 import AnimatedBorderButton from "../components/AnimatedBorderButton";
 
 export default function Hero() {
   const dots = useMemo(() => {
-    return Array.from({ length: 30 }).map(() => ({
+    return Array.from({ length: 60 }).map(() => ({
       left: Math.random() * 100,
       top: Math.random() * 100,
       duration: 15 + Math.random() * 20,
@@ -82,8 +105,8 @@ export default function Hero() {
             </div>
 
             {/* {Social link} */}
-            <div>
-              <span>Follow :</span>
+            <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
+              <span className="text-sm text-muted-foreground">Follow Me:</span>
               {[
                 {
                   icon: Github,
@@ -100,14 +123,86 @@ export default function Hero() {
               ].map((social, index) => {
                 const Icon = social.icon;
                 return (
-                  <a href={social.href} key={index}>
-                    {<Icon />}
+                  <a
+                    href={social.href}
+                    key={index}
+                    className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300"
+                  >
+                    {<Icon className="w-5 h-5" />}
                   </a>
                 );
               })}
             </div>
           </div>
+
+          {/* {Profile img} */}
+          <div className="relative animate-fade-in animation-delay-300">
+            <div className="relative max-w-md mx-auto">
+              <div
+                className="absolute inset-0 
+              rounded-3xl bg-linear-to-br 
+              from-primary/30 via-transparent 
+              to-primary/10 blur-2xl animate-pulse"
+              />
+              <div className="relative glass p-2 rounded-3xl glow-border">
+                <img
+                  src="profile.jpg"
+                  alt="Amir Muhammad Jafari"
+                  className="w-full aspect-4/5 object-cover rounded-2xl"
+                />
+
+                {/* Floating Badge */}
+                <div className="absolute -bottom-4 -right-4 glass rounded-xl px-4 py-3 animate-float">
+                  <div className="flex items-center gap-3">
+                    <div className="w-3 h-3 bg-green-600 rounded-full animate-pulse" />
+                    <span className="text-sm font-medium">
+                      Available for work
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+
+        {/* Skills Section */}
+        <div className="mt-20 animate-fade-in animation-delay-600">
+          <p className="text-sm text-muted-foreground mb-6 text-center">
+            Technologies I work with
+          </p>
+          <div className="relative overflow-hidden">
+            <div
+              className="absolute left-0 top-0 bottom-0 w-32
+             bg-linear-to-r from-background to-transparent z-10"
+            />
+            <div
+              className="absolute right-0 top-0 bottom-0 w-32
+             bg-linear-to-l from-background to-transparent z-10"
+            />
+            <div className="flex animate-marquee">
+              {[...skills, ...skills].map((skill, idx) => (
+                <div key={idx} className="shrink-0 px-8 py-4">
+                  <span className="text-xl font-semibold text-muted-foreground/50 hover:text-muted-foreground transition-colors">
+                    {skill}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 
+      animate-fade-in animation-delay-800"
+      >
+        <a
+          href="#about"
+          className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary transition-colors group"
+        >
+          <span className="text-xs uppercase tracking-wider">Scroll</span>
+          <ChevronDown className="w-6 h-6 animate-bounce" />
+        </a>
       </div>
     </section>
   );
