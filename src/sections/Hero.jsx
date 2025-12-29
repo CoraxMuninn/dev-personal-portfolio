@@ -193,7 +193,7 @@ export default function Hero() {
       </div>
 
       <div
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 
+        className="absolute bottom-0 left-1/2 -translate-x-1/2 
       animate-fade-in animation-delay-800"
       >
         <a

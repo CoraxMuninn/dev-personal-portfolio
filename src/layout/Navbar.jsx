@@ -3,10 +3,10 @@ import Button from "../components/Button";
 import { useEffect, useState } from "react";
 
 const NavLinks = [
-  { href: "#About", label: "About" },
-  { href: "#Projects", label: "Projects" },
-  { href: "#Experience", label: "Experience" },
-  { href: "#Testimonials", label: "Testimonials" },
+  { href: "#about", label: "About" },
+  { href: "#projects", label: "Projects" },
+  { href: "#experience", label: "Experience" },
+  { href: "#testimonials", label: "Testimonials" },
 ];
 
 export default function Navbar() {
@@ -38,8 +38,10 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 transition-all duration-500 ${
-        isScrolled ? "glass-strong py-3" : "bg-transparent py-5"
+      className={`fixed top-0 left-0 right-0 transition-all duration-500 ease-in-out ${
+        isScrolled
+          ? "bg-surface backdrop-blur-xl shadow-lg rounded-b-lg py-3"
+          : "bg-transparent py-5"
       }  z-50`}
     >
       <nav className="container mx-auto px-6 flex items-center justify-between">
@@ -89,6 +91,7 @@ export default function Navbar() {
           <div className="container mx-auto p-6 flex flex-col gap-4">
             {NavLinks.map((link, index) => (
               <a
+                onClick={() => setShowMobileMenu(false)}
                 href={link.href}
                 key={index}
                 className="text-lg text-muted-foreground hover:text-foreground py-2"
