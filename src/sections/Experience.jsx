@@ -1,19 +1,17 @@
 const experiences = [
   {
     period: "2022 — Present",
-    role: "Senior Frontend Engineer",
+    role: "Frontend Engineer",
     company: "Tech Innovators Inc.",
-    description:
-      "Leading frontend architecture for a suite of fintech products. Implemented micro-frontend architecture, reduced bundle size by 40%, and mentored a team of 5 developers.",
+    description: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum unde ea excepturi sapiente. Esse odio dolorem vel amet, reprehenderit corporis eius architecto doloremque cum officia molestiae iusto minima accusamus dolorum.`,
     technologies: ["React", "TypeScript", "Next.js", "GraphQL"],
     current: true,
   },
   {
     period: "2020 — 2022",
-    role: "Frontend Engineer",
+    role: "Frontend Developer",
     company: "Digital Solutions Co.",
-    description:
-      "Built and maintained multiple React applications for enterprise clients. Introduced automated testing practices that improved code coverage to 85%.",
+    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate est sed nesciunt ex deserunt dignissimos dolorem repellendus quis expedita, totam aperiam quisquam corrupti maiores excepturi asperiores tempora quidem impedit ullam!`,
     technologies: ["React", "Redux", "Jest", "Cypress"],
     current: false,
   },
@@ -21,8 +19,7 @@ const experiences = [
     period: "2019 — 2020",
     role: "Junior Developer",
     company: "StartUp Labs",
-    description:
-      "Contributed to the development of a SaaS platform from MVP to production. Collaborated with designers to implement pixel-perfect UI components.",
+    description: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores veniam quaerat illo, facilis, dicta alias voluptatibus ab odit facere voluptates nesciunt inventore mollitia quam commodi maxime, aliquid repellendus? Optio, harum.`,
     technologies: ["React", "Node.js", "MongoDB", "AWS"],
     current: false,
   },
@@ -30,8 +27,7 @@ const experiences = [
     period: "2018 — 2019",
     role: "Freelance Developer",
     company: "Self-Employed",
-    description:
-      "Delivered custom web solutions for small businesses and startups. Built 15+ websites and applications, handling everything from design to deployment.",
+    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sit cumque quidem aspernatur consequuntur saepe, possimus porro laboriosam sint natus temporibus veniam velit deleniti beatae nesciunt! Quas ab ullam harum.`,
     technologies: ["JavaScript", "PHP", "WordPress", "MySQL"],
     current: false,
   },
@@ -39,7 +35,7 @@ const experiences = [
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-32 relative overflow-hidden">
+    <section id="experience" className="py-20 relative overflow-hidden">
       <div
         className="absolute top-1/2 left-1/4 w-96
        h-96 bg-primary/5 rounded-full blur-3xl -translate-y-1/2"
