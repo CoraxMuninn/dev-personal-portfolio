@@ -4,32 +4,28 @@ const experiences = [
     role: "Frontend Engineer",
     company: "Tech Innovators Inc.",
     description: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum unde ea excepturi sapiente. Esse odio dolorem vel amet, reprehenderit corporis eius architecto doloremque cum officia molestiae iusto minima accusamus dolorum.`,
-    technologies: ["React", "TypeScript", "Next.js", "GraphQL"],
-    current: true,
+    technologies: ["React", "TypeScript", "Next.js", "Framer Motion"],
   },
   {
     period: "2020 — 2022",
     role: "Frontend Developer",
     company: "Digital Solutions Co.",
     description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate est sed nesciunt ex deserunt dignissimos dolorem repellendus quis expedita, totam aperiam quisquam corrupti maiores excepturi asperiores tempora quidem impedit ullam!`,
-    technologies: ["React", "Redux", "Jest", "Cypress"],
-    current: false,
+    technologies: ["React", "Redux", "TailwindCSS"],
   },
   {
     period: "2019 — 2020",
     role: "Junior Developer",
     company: "StartUp Labs",
     description: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores veniam quaerat illo, facilis, dicta alias voluptatibus ab odit facere voluptates nesciunt inventore mollitia quam commodi maxime, aliquid repellendus? Optio, harum.`,
-    technologies: ["React", "Node.js", "MongoDB", "AWS"],
-    current: false,
+    technologies: ["React", "Prisma", "PostgreSQL", "React Router"],
   },
   {
     period: "2018 — 2019",
     role: "Freelance Developer",
     company: "Self-Employed",
     description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sit cumque quidem aspernatur consequuntur saepe, possimus porro laboriosam sint natus temporibus veniam velit deleniti beatae nesciunt! Quas ab ullam harum.`,
-    technologies: ["JavaScript", "PHP", "WordPress", "MySQL"],
-    current: false,
+    technologies: ["JavaScript", "React", "CSS", "HTML"],
   },
 ];
 
@@ -85,9 +81,7 @@ export default function Experience() {
               >
                 {/* Timeline Dot */}
                 <div className="absolute left-0 md:left-1/2 top-0 w-3 h-3 bg-primary rounded-full -translate-x-1/2 ring-4 ring-background z-10">
-                  {exp.current && (
-                    <span className="absolute inset-0 rounded-full bg-primary animate-ping opacity-75" />
-                  )}
+                  <span className="absolute inset-0 rounded-full bg-primary animate-ping opacity-75" />
                 </div>
 
                 {/* Content */}
