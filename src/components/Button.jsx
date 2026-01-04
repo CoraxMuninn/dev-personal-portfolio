@@ -1,4 +1,9 @@
-export default function Button({ className = "", size = "default", children }) {
+export default function Button({
+  className = "",
+  size = "default",
+  children,
+  ...props
+}) {
   const baseClasses =
     "relative rounded-full overflow-hidden font-medium focus-visible:ring-primary transition-all duration-300 bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg shadow-primary/25";
 
@@ -10,7 +15,7 @@ export default function Button({ className = "", size = "default", children }) {
 
   const classes = `${baseClasses} ${sizeClasses[size]} ${className}`;
   return (
-    <button className={classes}>
+    <button className={classes} {...props}>
       <span className="relative flex items-center justify-center gap-2">
         {children}
       </span>
