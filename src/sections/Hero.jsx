@@ -110,7 +110,7 @@ export default function Hero() {
               {[
                 {
                   icon: Github,
-                  href: "#",
+                  href: "https://github.com/CoraxMuninn",
                 },
                 {
                   icon: Send,
@@ -118,7 +118,7 @@ export default function Hero() {
                 },
                 {
                   icon: Instagram,
-                  href: "#",
+                  href: "https://www.instagram.com/corvus_xaroc/",
                 },
               ].map((social, index) => {
                 const Icon = social.icon;

@@ -76,7 +76,6 @@ export default function Contact() {
       });
       setFormData({ name: "", email: "", message: "" });
     } catch (error) {
-      console.error("EmailJS error:", error);
       setSubmitStatus({
         type: "error",
         message:
@@ -125,7 +124,7 @@ export default function Contact() {
                   id="name"
                   type="text"
                   required
-                  placeholder="Your name..."
+                  placeholder="Your Name..."
                   value={formData.name}
                   onChange={(e) =>
                     setFormData({ ...formData, name: e.target.value })
