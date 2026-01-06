@@ -30,7 +30,7 @@ const testimonials = [
     quote:
       "Not only is Amir technically brilliant, but he's also a fantastic communicator and team player. He elevated everyone around him.",
     author: "David Kim",
-    role: "CEO, Innovation Hub",
+    role: "CEO, Innovation",
     avatar:
       "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop",
   },
