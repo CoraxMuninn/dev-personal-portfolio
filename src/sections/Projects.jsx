@@ -2,36 +2,42 @@ import { ArrowUpRight, Github } from "lucide-react";
 import AnimatedBorderButton from "../components/AnimatedBorderButton";
 const projects = [
   {
+    title: "Lingerie E-Commerce Platform",
+    description: `A Persian/RTL e-commerce platform for premium lingerie with a full storefront and admin dashboard.`,
+    image: "/projects/project1.png",
+    tags: [
+      "Next.js",
+      " TypeScript",
+      " PostgreSQL ",
+      "Prisma",
+      "Tailwind",
+      " shadcn/ui",
+    ],
+    Github: "https://github.com/CoraxMuninn",
+    link: "https://underwaershop.vercel.app/",
+  },
+  {
+    title: "A multilingual B2B Website",
+    description: `A multilingual B2B website for a frozen food export company, serving content in four languages (English, Persian, Russian, Vietnamese).`,
+    image: "/projects/project2.png",
+    tags: ["Next.js", "TypeScript", "Decap CMS", "Tailwind"],
+    Github: "https://github.com/CoraxMuninn",
+    link: "https://feizfoodgroup.vercel.app/",
+  },
+  {
+    title: "General E-commerce Platform",
+    description: `A full-stack e-commerce platform with product listings, cart, checkout flow, user authentication, and server-side rendering.`,
+    image: "/projects/project3.png",
+    tags: ["Next.js", "TypeScript", "Tailwind", "PostgreSQL"],
+    Github: "https://github.com/CoraxMuninn/cm-commerce",
+  },
+  {
     title: "Watch Store",
     description: `A modern React website that lets users explore and shop luxury watches with smooth interactions, responsive layouts.`,
-    image: "/projects/project1.png",
+    image: "/projects/project4.png",
     tags: ["React", "Tailwind", "Redux", "Framer Motion"],
     Github: "https://github.com/CoraxMuninn/dow-watch-store",
     link: "https://dow-watch-store.vercel.app/",
-  },
-  {
-    title: "Inventory Management App",
-    description: `An inventory management app for tracking products, monitoring stock levels, and visualizing key metrics.`,
-    image: "/projects/project2.png",
-    tags: ["Next.js", "TypeScript", "Tailwind", "PostgreSQL"],
-    Github: "https://github.com/CoraxMuninn/inventory-management-app",
-    link: "https://cm-inventory-management-app.vercel.app/",
-  },
-  {
-    title: "Trello Clone",
-    description: `A modern Trello-inspired application that allows users to manage boards, lists, and cards.`,
-    image: "/projects/project3.png",
-    tags: ["Next.js", "TypeScript", "Tailwind", "Supabase", "ShadCN/ui"],
-    Github: "https://github.com/CoraxMuninn/trello-clone",
-    link: "https://cm-trello-clone.vercel.app/",
-  },
-  {
-    title: "Food Order",
-    description: `A React-based food ordering app with dynamic cart management and multi-step checkout.`,
-    image: "/projects/project4.png",
-    tags: ["React", "FireBase Database", "Redux"],
-    Github: "https://github.com/CoraxMuninn/react-food-order-app",
-    link: "https://cm-react-food-order.vercel.app",
   },
 ];
 
